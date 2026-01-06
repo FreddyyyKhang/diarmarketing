@@ -41,7 +41,6 @@ const Header: React.FC = () => {
   return (
     <header className={`flex flex-col md:flex-row items-center justify-between px-6 py-6 md:px-12 bg-black/30 backdrop-blur-sm border-b border-white/10 sticky top-0 z-50 transition-transform duration-700 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <a href="#home" onClick={(e) => handleNavigation(e, '#home')} className="flex flex-col items-center md:items-start group cursor-pointer antialiased">
-        {/* DÍAR remains font-bold (700) as you liked it */}
         <h1 
           className="text-3xl md:text-4xl font-cinzel font-bold tracking-[0.3em] text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#F1D592] to-[#C5A059] leading-normal pb-1 transition-all duration-300"
           style={{ 
@@ -51,10 +50,7 @@ const Header: React.FC = () => {
         >
           DÍAR
         </h1>
-        {/* MARKETING is now font-medium (500) with wider spacing for elegance */}
-        <span className="text-[10px] font-cinzel font-medium tracking-[0.6em] text-[#C5A059]/90 -mt-2">
-          MARKETING
-        </span>
+        <span className="text-[10px] font-cinzel tracking-[0.5em] text-[#C5A059]/80 -mt-2">MARKETING</span>
       </a>
      
       <nav className="flex flex-wrap justify-center gap-6 md:gap-10">
