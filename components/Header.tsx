@@ -44,22 +44,22 @@ const Header: React.FC = () => {
   return (
     <header className={`flex flex-col md:flex-row items-center justify-between px-6 py-6 md:px-12 bg-black/30 backdrop-blur-sm border-b border-white/10 sticky top-0 z-50 transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       
-      {/* LOGO SECTION - PERFECTLY CENTERED */}
+      {/* LOGO SECTION - SIZE FROM PROMPT, THICKNESS FROM CURRENT VERSION */}
       <a 
         href="#home" 
         onClick={(e) => handleNavigation(e, '#home')}
         className="flex flex-col items-center mb-6 md:mb-0 group cursor-pointer antialiased"
       >
-        {/* DÍAR: Size and tracking kept exactly as they were */}
+        {/* DÍAR: Size 3xl/4xl, Font Weight 700, and Tight tracking */}
         <h1 
           className="text-3xl md:text-4xl font-cinzel font-bold tracking-[0.02em] text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#F1D592] to-[#C5A059] leading-none transition-transform duration-300 group-hover:scale-[1.02]"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
           DÍAR
         </h1>
-        {/* MARKETING: Centering fix added via paddingLeft to offset the 0.45em tracking */}
+        {/* MARKETING: text-xs, Font Weight 300, tracking-wide and Perfectly Centered */}
         <span 
-          className="text-[10px] md:text-[11px] font-cinzel font-light tracking-[0.45em] text-[#C5A059] -mt-1 text-center block w-full"
+          className="text-xs font-cinzel font-light tracking-[0.45em] text-[#C5A059] -mt-1 text-center block w-full"
           style={{ paddingLeft: '0.45em' }} 
         >
           MARKETING
@@ -74,16 +74,24 @@ const Header: React.FC = () => {
           if (isDropdown) {
             return (
               <div key={item} className="relative group flex items-center">
-                <button className="text-sm md:text-base font-semibold tracking-wider text-white hover:text-[#F1D592] transition-colors duration-200 flex items-center gap-1">
+                <button
+                  className="text-sm md:text-base font-semibold tracking-wider text-white hover:text-[#F1D592] transition-colors duration-200 flex items-center gap-1 uppercase"
+                >
                   {item}
                   <svg className="w-3 h-3 transition-transform duration-300 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
+                
                 <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-72 invisible group-hover:visible opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 ease-out z-50">
                   <div className="bg-[#0f172a]/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl overflow-hidden py-2">
                     {dropdownLinks.map((link) => (
-                      <a key={link.name} href={link.path} onClick={(e) => handleNavigation(e, link.path)} className="block px-6 py-3 text-xs md:text-sm font-semibold text-slate-300 hover:text-[#F1D592] hover:bg-white/5 transition-all duration-200 border-l-2 border-transparent hover:border-[#C5A059]">
+                      <a
+                        key={link.name}
+                        href={link.path}
+                        onClick={(e) => handleNavigation(e, link.path)}
+                        className="block px-6 py-3 text-xs md:text-sm font-semibold text-slate-300 hover:text-[#F1D592] hover:bg-white/5 transition-all duration-200 border-l-2 border-transparent hover:border-[#C5A059] uppercase"
+                      >
                         {link.name}
                       </a>
                     ))}
@@ -94,8 +102,14 @@ const Header: React.FC = () => {
           }
 
           const path = item === 'HOME' ? '#home' : `#${item.toLowerCase().replace(' ', '-')}`;
+
           return (
-            <a key={item} href={path} onClick={(e) => handleNavigation(e, path)} className="text-sm md:text-base font-semibold tracking-wider text-white hover:text-[#F1D592] transition-colors duration-200">
+            <a
+              key={item}
+              href={path}
+              onClick={(e) => handleNavigation(e, path)}
+              className="text-sm md:text-base font-semibold tracking-wider text-white hover:text-[#F1D592] transition-colors duration-200 uppercase"
+            >
               {item}
             </a>
           );
