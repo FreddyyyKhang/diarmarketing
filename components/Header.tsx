@@ -44,21 +44,21 @@ const Header: React.FC = () => {
   return (
     <header className={`flex flex-col md:flex-row items-center justify-between px-6 py-6 md:px-12 bg-black/30 backdrop-blur-sm border-b border-white/10 sticky top-0 z-50 transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       
-      {/* LOGO SECTION - REFINED FOR ORIGINAL PROPORTIONS */}
+      {/* LOGO SECTION - MATCHING ORIGINAL PROPORTIONS */}
       <a 
         href="#home" 
         onClick={(e) => handleNavigation(e, '#home')}
         className="flex flex-col items-center mb-6 md:mb-0 group cursor-pointer antialiased"
       >
-        {/* DÍAR: Font size reduced to 2xl/3xl and tracking tightened to [0.12em] */}
+        {/* DÍAR: Increased back to 3xl/4xl with tight tracking [0.02em] to match the original width */}
         <h1 
-          className="text-2xl md:text-3xl font-cinzel font-bold tracking-[0.12em] text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#F1D592] to-[#C5A059] leading-none transition-transform duration-300 group-hover:scale-[1.02]"
+          className="text-3xl md:text-4xl font-cinzel font-bold tracking-[0.02em] text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#F1D592] to-[#C5A059] leading-none transition-transform duration-300 group-hover:scale-[1.02]"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
           DÍAR
         </h1>
-        {/* MARKETING: Spacing increased to [0.65em] to span the width of DÍAR like an underline */}
-        <span className="text-[9px] md:text-[10px] font-cinzel font-light tracking-[0.65em] text-[#C5A059] -mt-1.5 text-center w-full block ml-[0.65em]">
+        {/* MARKETING: Tracking balanced to [0.45em] to span the same width as DÍAR above it */}
+        <span className="text-[10px] md:text-[11px] font-cinzel font-light tracking-[0.45em] text-[#C5A059] -mt-1 text-center w-full block">
           MARKETING
         </span>
       </a>
