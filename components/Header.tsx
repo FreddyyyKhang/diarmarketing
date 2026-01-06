@@ -44,23 +44,23 @@ const Header: React.FC = () => {
   return (
     <header className={`flex flex-col md:flex-row items-center justify-between px-6 py-6 md:px-12 bg-black/30 backdrop-blur-sm border-b border-white/10 sticky top-0 z-50 transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       
-      {/* LOGO SECTION - SIZE FROM PROMPT, THICKNESS FROM CURRENT VERSION */}
+      {/* LOGO SECTION - UPDATED SPACING FOR DÍAR */}
       <a 
         href="#home" 
         onClick={(e) => handleNavigation(e, '#home')}
         className="flex flex-col items-center mb-6 md:mb-0 group cursor-pointer antialiased"
       >
-        {/* DÍAR: Size 3xl/4xl, Font Weight 700, and Tight tracking */}
+        {/* DÍAR: class changed to tracking-widest as requested */}
         <h1 
-          className="text-3xl md:text-4xl font-cinzel font-bold tracking-[0.02em] text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#F1D592] to-[#C5A059] leading-none transition-transform duration-300 group-hover:scale-[1.02]"
+          className="text-3xl md:text-4xl font-cinzel font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#C5A059] via-[#F1D592] to-[#C5A059] leading-none transition-transform duration-300 group-hover:scale-[1.02]"
           style={{ textShadow: '0 2px 10px rgba(0,0,0,0.3)' }}
         >
           DÍAR
         </h1>
-        {/* MARKETING: text-xs, Font Weight 300, tracking-wide and Perfectly Centered */}
+        {/* MARKETING: Centering fix maintained with paddingLeft */}
         <span 
-          className="text-xs font-cinzel font-light tracking-[0.45em] text-[#C5A059] -mt-1 text-center block w-full"
-          style={{ paddingLeft: '0.45em' }} 
+          className="text-xs font-cinzel font-light tracking-[0.4em] text-[#C5A059] -mt-1 text-center block w-full"
+          style={{ paddingLeft: '0.4em' }} 
         >
           MARKETING
         </span>
