@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Layout, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Layout, CheckCircle2, Clock } from 'lucide-react';
 
 const WebDesigns: React.FC = () => {
   return (
@@ -38,14 +38,22 @@ const WebDesigns: React.FC = () => {
             {/* Redesigned Investment Card */}
             <div className="bg-[#1e2736] rounded-[2rem] p-8 md:p-10 border border-white/5 shadow-xl relative overflow-hidden group">
               <div className="relative z-10">
-                <span className="text-[11px] uppercase tracking-[0.4em] text-[#C5A059] font-bold block mb-2 opacity-80">
-                  INVESTMENT
-                </span>
-                <div className="text-[24px] sm:text-[32px] md:text-[38px] lg:text-[40px] font-cinzel font-bold text-[#F1D592] mb-8 leading-tight drop-shadow-sm whitespace-nowrap">
+                <div className="flex justify-between items-start mb-2">
+                  <span className="text-[11px] uppercase tracking-[0.4em] text-[#C5A059] font-bold block opacity-80">
+                    INVESTMENT
+                  </span>
+                  <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-[#C5A059]/10 border border-[#C5A059]/20 text-[#F1D592] text-[9px] font-black uppercase tracking-tighter">
+                    <Clock size={10} /> 1 Week Free Trial
+                  </div>
+                </div>
+                <div className="text-[24px] sm:text-[32px] md:text-[38px] lg:text-[40px] font-cinzel font-bold text-[#F1D592] mb-4 leading-tight drop-shadow-sm whitespace-nowrap">
                   1000€ / 1000$
                 </div>
                 
-                <div className="h-[1px] bg-white/10 w-full mb-6"></div>
+                <div className="flex items-center justify-between py-3 border-y border-white/5 mb-6">
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-slate-500 font-bold">Monthly Maintenance</span>
+                  <span className="text-white text-sm font-bold tracking-widest">500€ / 500$</span>
+                </div>
                 
                 <div className="flex items-center justify-between">
                   <span className="text-[11px] uppercase tracking-[0.4em] text-slate-500 font-bold">TIMEFRAME</span>
