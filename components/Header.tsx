@@ -31,8 +31,8 @@ const Header: React.FC = () => {
 
   const services = [
     { name: 'Web Designs', path: '#web-designs' },
-    { name: 'Architectural AI Automations', path: '#architectural-ai-automations' },
-    { name: 'AI Voice Receptionists & Cognitive Management', path: '#ai-voice-receptionists-cognitive-management' }
+    { name: 'AI Voice Receptionists & Cognitive Management', path: '#ai-voice-receptionists-cognitive-management' },
+    { name: 'Architectural AI Automations', path: '#architectural-ai-automations' }
   ];
 
   const aboutUsLinks = [
