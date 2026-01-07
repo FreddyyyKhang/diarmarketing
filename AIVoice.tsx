@@ -40,6 +40,10 @@ const AIVoice: React.FC = () => {
                   </p>
                 </div>
               </div>
+
+              <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-[#C5A059]/10 rounded-xl border border-[#C5A059]/20 text-[#F1D592] text-[10px] font-black uppercase tracking-[0.2em]">
+                <Zap size={14} className="animate-pulse" /> 1 Week Free Trial Before Buying
+              </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
                 {[
@@ -58,10 +62,16 @@ const AIVoice: React.FC = () => {
 
             <div className="w-full md:w-80 flex flex-col gap-6">
               <div className="p-6 md:p-8 bg-black/40 rounded-3xl border border-[#C5A059]/20 flex flex-col items-center text-center shadow-inner">
-                <span className="text-[9px] md:text-[10px] text-[#C5A059] tracking-[0.4em] font-black uppercase mb-3">Package Price</span>
-                <div className="text-[22px] sm:text-[26px] md:text-[30px] font-cinzel font-bold text-white mb-6 whitespace-nowrap">
+                <span className="text-[9px] md:text-[10px] text-[#C5A059] tracking-[0.4em] font-black uppercase mb-3">Initial Investment</span>
+                <div className="text-[22px] sm:text-[26px] md:text-[30px] font-cinzel font-bold text-white mb-2 whitespace-nowrap">
                   1500€ / 1500$
                 </div>
+                
+                <div className="w-full h-[1px] bg-white/5 my-4"></div>
+                
+                <span className="text-[8px] md:text-[9px] text-slate-500 tracking-[0.3em] font-black uppercase mb-1">Monthly Maintenance</span>
+                <div className="text-sm font-bold text-[#F1D592] mb-6">1300€ / 1300$</div>
+
                 <button className="w-full py-4 bg-[#C5A059] hover:bg-[#F1D592] text-[#0a0f1a] font-black tracking-[0.2em] rounded-xl transition-all uppercase text-xs">
                   Inquire Now
                 </button>
