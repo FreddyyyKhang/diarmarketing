@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Cpu } from 'lucide-react';
+import { ArrowLeft, Cpu, Package, Zap } from 'lucide-react';
 
 const ArchitecturalAI: React.FC = () => {
   return (
@@ -19,18 +19,29 @@ const ArchitecturalAI: React.FC = () => {
             <ArrowLeft size={16} /> Back to Home
           </a>
 
-          <div className="mb-4 inline-block px-4 py-1 rounded-full border border-[#C5A059]/30 bg-[#C5A059]/5 text-[#F1D592] text-[10px] font-bold tracking-[0.4em] uppercase">
-            Next Generation Systems
+          <div className="flex flex-col items-center gap-4 mb-4">
+             <div className="inline-block px-4 py-1 rounded-full border border-[#C5A059]/30 bg-[#C5A059]/5 text-[#F1D592] text-[10px] font-bold tracking-[0.4em] uppercase">
+              The Ultimate Master Suite
+            </div>
+             <div className="flex items-center gap-2 px-3 py-1 bg-white/5 rounded-lg border border-white/10 text-[9px] text-[#C5A059] font-black uppercase tracking-widest">
+               <Zap size={10} className="fill-[#C5A059]" /> 1 Week Free Trial
+             </div>
           </div>
           
           <h2 className="text-3xl md:text-5xl font-cinzel font-bold text-white tracking-[0.2em] uppercase mb-8 leading-tight">
             Architectural AI <br/><span className="text-[#F1D592]">Automations</span>
           </h2>
 
-          <div className="max-w-2xl space-y-8">
-            <h3 className="text-xl md:text-2xl font-cinzel text-[#F1D592] italic tracking-widest">
-              "The New Era of Sovereignty"
-            </h3>
+          <div className="max-w-2xl space-y-8 mb-10">
+            <div className="p-6 bg-[#C5A059]/5 border border-[#C5A059]/20 rounded-2xl flex flex-col md:flex-row items-center gap-6">
+              <Package size={40} className="text-[#C5A059] shrink-0" />
+              <div className="text-left">
+                <h4 className="text-white font-cinzel font-bold tracking-widest uppercase text-sm mb-1">Unified Intelligence Package</h4>
+                <p className="text-slate-400 text-xs md:text-sm font-light">
+                  A comprehensive master-package combining our <span className="text-[#F1D592] font-semibold">Web Designs</span> and <span className="text-[#F1D592] font-semibold">AI Voice Receptionists & Cognitive Management</span> into one seamless, powerful architectural suite.
+                </p>
+              </div>
+            </div>
 
             <div className="space-y-6 text-slate-300 leading-relaxed text-sm md:text-lg font-light">
               <p>
@@ -42,15 +53,24 @@ const ArchitecturalAI: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-12 flex flex-col items-center gap-8 w-full justify-center max-w-md mx-auto">
-            <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 w-full text-center">
-              <span className="text-[10px] uppercase tracking-[0.3em] text-[#C5A059] font-black block mb-2">Strategic Package</span>
-              <div className="text-[24px] sm:text-[32px] md:text-[38px] font-cinzel font-bold text-white whitespace-nowrap">
-                1500€ / 1500$
+          <div className="mt-4 flex flex-col items-center gap-8 w-full justify-center max-w-md mx-auto">
+            <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 w-full text-center shadow-inner group">
+              <span className="text-[10px] uppercase tracking-[0.3em] text-[#C5A059] font-black block mb-2">Master Package Price</span>
+              <div className="text-[24px] sm:text-[32px] md:text-[38px] font-cinzel font-bold text-white whitespace-nowrap mb-4 group-hover:scale-105 transition-transform duration-500">
+                3000€ / 3000$
               </div>
-              <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between">
-                <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Timeframe</span>
-                <span className="text-[#F1D592] text-xs font-bold uppercase tracking-widest">1 Month</span>
+              
+              <div className="h-[1px] bg-white/5 w-full my-6"></div>
+              
+              <div className="flex flex-col gap-4">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Monthly Maintenance</span>
+                  <span className="text-[#F1D592] text-sm font-bold tracking-widest">1000€ / 1000$</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold">Timeframe</span>
+                  <span className="text-white text-xs font-bold uppercase tracking-widest">1 Month</span>
+                </div>
               </div>
             </div>
           </div>
