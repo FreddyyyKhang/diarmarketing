@@ -43,7 +43,7 @@ const WebDesigns: React.FC = () => {
                 </span>
                 
                 <div className="text-[22px] min-[375px]:text-[26px] sm:text-[40px] md:text-[48px] font-cinzel font-bold text-white mb-8 leading-tight text-center drop-shadow-lg whitespace-nowrap tracking-tight">
-                  1000€ / 1000$
+                  1500€ / 1500$
                 </div>
                 
                 <div className="w-full h-[1px] bg-white/5 mb-8"></div>
