@@ -53,7 +53,7 @@ const ArchitecturalAI: React.FC = () => {
                 </span>
                 
                 <div className="text-[22px] min-[375px]:text-[28px] sm:text-[48px] md:text-[56px] font-cinzel font-bold text-white mb-10 leading-tight text-center drop-shadow-lg tracking-wider whitespace-nowrap">
-                  3000€ / 3000$
+                  2500€ / 2500$
                 </div>
                 
                 <div className="w-full h-[1px] bg-white/5 mb-10"></div>
