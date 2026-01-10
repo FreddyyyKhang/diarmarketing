@@ -1,8 +1,9 @@
-
 import React from 'react';
 import { ArrowLeft, Layout, CheckCircle2, Sparkles } from 'lucide-react';
 
 const WebDesigns: React.FC = () => {
+  const stripeUrl = "https://buy.stripe.com/8x28wPcfoc336Nn8lpdZ604";
+
   return (
     <div className="flex-grow flex items-center justify-center p-6 md:p-12 lg:p-20">
       <div className="max-w-5xl w-full bg-[#1a2333]/60 backdrop-blur-xl rounded-3xl border border-white/10 shadow-2xl overflow-hidden">
@@ -30,8 +31,13 @@ const WebDesigns: React.FC = () => {
               <p>
                 We offer professional web design services for businesses. Our focus is on creating engaging and user-friendly websites that reflect our clients' identity and goals.
               </p>
-              <div className="flex items-center gap-2 text-[#F1D592] text-[11px] font-black uppercase tracking-[0.2em] py-2 px-3 bg-[#C5A059]/10 rounded-lg self-start">
-                <Sparkles size={14} className="animate-pulse" /> 1 week free trial
+              <div className="space-y-3 self-start">
+                <div className="flex items-center gap-2 text-[#F1D592] text-[11px] font-black uppercase tracking-[0.2em] py-2 px-3 bg-[#C5A059]/10 rounded-lg">
+                  <Sparkles size={14} className="animate-pulse" /> 7 days money back policy
+                </div>
+                <p className="text-[10px] text-slate-500 font-medium tracking-wide italic">
+                  100% money-back guarantee if you are not completely satisfied.
+                </p>
               </div>
             </div>
 
@@ -66,9 +72,14 @@ const WebDesigns: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none"></div>
             </div>
 
-            <button className="mt-10 w-full py-5 bg-[#C5A059] hover:bg-[#F1D592] text-[#0a0f1a] font-black tracking-[0.3em] rounded-2xl transition-all shadow-xl active:scale-[0.98] uppercase text-sm">
-              Start Your Free Trial
-            </button>
+            <a 
+              href={stripeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 w-full py-5 bg-[#C5A059] hover:bg-[#F1D592] text-[#0a0f1a] font-black tracking-[0.3em] rounded-2xl transition-all shadow-xl active:scale-[0.98] uppercase text-sm flex items-center justify-center"
+            >
+              Get Started
+            </a>
           </div>
 
           {/* Right: Visual & Features */}
