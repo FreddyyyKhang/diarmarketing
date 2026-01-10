@@ -1,8 +1,9 @@
-
 import React from 'react';
 import { ArrowLeft, Cpu, Package, Sparkles } from 'lucide-react';
 
 const ArchitecturalAI: React.FC = () => {
+  const stripeUrl = "https://buy.stripe.com/28EeVd2EO0kl5Jj0SXdZ605";
+
   return (
     <div className="flex-grow flex items-center justify-center p-6 md:p-12 lg:p-20">
       <div className="max-w-4xl w-full bg-[#0a0f1a]/80 backdrop-blur-xl rounded-[3rem] border border-[#C5A059]/30 shadow-2xl overflow-hidden relative">
@@ -23,9 +24,14 @@ const ArchitecturalAI: React.FC = () => {
              <div className="inline-block px-4 py-1 rounded-full border border-[#C5A059]/30 bg-[#C5A059]/5 text-[#F1D592] text-[9px] md:text-[10px] font-bold tracking-[0.4em] uppercase">
               The Ultimate Master Suite
             </div>
-            <div className="flex items-center gap-2 text-[#F1D592] text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] py-1.5 px-4 bg-[#C5A059]/10 rounded-lg">
-                <Sparkles size={14} className="animate-pulse" /> 1 week free trial
+            <div className="flex flex-col items-center gap-3">
+              <div className="flex items-center gap-2 text-[#F1D592] text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] py-1.5 px-4 bg-[#C5A059]/10 rounded-lg">
+                <Sparkles size={14} className="animate-pulse" /> 7 days money back policy
               </div>
+              <p className="text-[10px] text-slate-500 font-medium tracking-wide italic">
+                100% money-back guarantee if you are not completely satisfied.
+              </p>
+            </div>
           </div>
           
           <h2 className="text-3xl md:text-5xl font-cinzel font-bold text-white tracking-[0.2em] uppercase mb-8 leading-tight">
@@ -77,9 +83,14 @@ const ArchitecturalAI: React.FC = () => {
             </div>
           </div>
 
-          <button className="px-12 py-5 bg-white text-[#0a0f1a] hover:bg-[#F1D592] font-black tracking-[0.4em] rounded-full transition-all shadow-[0_0_50px_rgba(255,255,255,0.1)] active:scale-95 uppercase text-[10px] md:text-xs">
-            Begin Free Trial
-          </button>
+          <a 
+            href={stripeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-12 py-5 bg-white text-[#0a0f1a] hover:bg-[#F1D592] font-black tracking-[0.4em] rounded-full transition-all shadow-[0_0_50px_rgba(255,255,255,0.1)] active:scale-95 uppercase text-[10px] md:text-xs flex items-center justify-center"
+          >
+            Get Started
+          </a>
         </div>
       </div>
     </div>
