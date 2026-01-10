@@ -1,8 +1,9 @@
-
 import React from 'react';
 import { ArrowLeft, Mic2, PhoneIncoming, Clock, Zap, Sparkles } from 'lucide-react';
 
 const AIVoice: React.FC = () => {
+  const stripeUrl = "https://buy.stripe.com/dRm9ATcfofff2x79ptdZ601";
+
   return (
     <div className="flex-grow flex items-center justify-center p-6 md:p-12 lg:p-20">
       <div className="max-w-5xl w-full bg-gradient-to-br from-[#1a2333] to-[#0a0f1a] backdrop-blur-xl rounded-3xl border border-white/5 shadow-2xl overflow-hidden">
@@ -41,8 +42,13 @@ const AIVoice: React.FC = () => {
                 </div>
               </div>
 
-              <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 bg-[#F1D592]/10 rounded-xl border border-[#F1D592]/20 text-[#F1D592] text-[10px] font-black uppercase tracking-[0.2em]">
-                <Sparkles size={14} className="animate-pulse" /> 1 week free trial
+              <div className="flex flex-col gap-3 mb-8">
+                <div className="inline-flex items-center gap-2 self-start px-4 py-2 bg-[#F1D592]/10 rounded-xl border border-[#F1D592]/20 text-[#F1D592] text-[10px] font-black uppercase tracking-[0.2em]">
+                  <Sparkles size={14} className="animate-pulse" /> 7 days money back policy
+                </div>
+                <p className="text-[10px] text-slate-500 font-medium tracking-wide italic">
+                  100% money-back guarantee if you are not completely satisfied.
+                </p>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -87,9 +93,14 @@ const AIVoice: React.FC = () => {
                 </div>
               </div>
 
-              <button className="w-full py-5 bg-[#C5A059] hover:bg-[#F1D592] text-[#0a0f1a] font-black tracking-[0.3em] rounded-2xl transition-all shadow-xl active:scale-[0.98] uppercase text-xs">
-                Inquire & Start Trial
-              </button>
+              <a 
+                href={stripeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-5 bg-[#C5A059] hover:bg-[#F1D592] text-[#0a0f1a] font-black tracking-[0.3em] rounded-2xl transition-all shadow-xl active:scale-[0.98] uppercase text-xs flex items-center justify-center"
+              >
+                Get Started
+              </a>
             </div>
           </div>
         </div>
